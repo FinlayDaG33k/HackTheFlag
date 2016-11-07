@@ -1,0 +1,35 @@
+#btcAddr{
+    background: #f7a645 url(/inc/img/bitlogo.png) no-repeat 5px;
+    width: 360px;
+    height: 25px;
+    position: absolute;
+    z-index: 100;
+    bottom: 0px;
+    right: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4d4d4d;
+    border-top-left-radius: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#btcAddr #addr{
+    background: #f7be78;
+    padding: 0 3px;
+    margin-left: 72px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+#btcAddr img{
+    margin: 0;
+    padding: 0;
+    background: white;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+}
+
+#btcAddr img:hover{
+    cursor: pointer;
+}
