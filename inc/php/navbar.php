@@ -13,7 +13,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
-        <li><a href="#">Github</a></li>
+        <li><a href="https://github.com/FinlayDaG33k/HackTheFlag" target="_new">Github</a></li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -43,8 +43,8 @@
 				<li class="divider"></li>
 				<li><a href="//<?= $_SERVER[HTTP_HOST]; ?>/inc/php/login.php?action=logout">Uitloggen</a></li>
 			<?php }else{ ?>
-				<li><a href="?action=inloggen">Inloggen</a></li>
-				<li><a href="?action=register">Registreren</a></li>
+				<li><a href="/index.php?action=inloggen">Inloggen</a></li>
+				<li><a href="/index.php?action=register">Registreren</a></li>
 			<?php } ?>
           </ul>
         </li>

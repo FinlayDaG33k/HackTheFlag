@@ -62,7 +62,7 @@
 				</div>
 				<div class="panel-body">
 					<?php
-					$sql = "SELECT Points, Username FROM users WHERE `Points` > 0;";
+					$sql = "SELECT Points, Username FROM users WHERE `Points` > 0 ORDER BY Points DESC;";
 					$sql_output = $conn->query($sql);
 					if ($sql_output->num_rows > 0) {
 						?>

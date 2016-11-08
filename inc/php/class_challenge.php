@@ -29,7 +29,7 @@ if(!empty($_POST['inputFlag']) && !empty($_POST['username'])){
 			if($solved == 1){
 				$check_points = "SELECT * FROM logs WHERE `Challenge`='".$challenge_ID."' AND `Solved`='1'";
 				$result = $conn->query($check_solved);
-				if($result->num_rows == 1){
+				if($result->num_rows <= 1){
 					$points = 7;
 				}elseif($result->num_rows == 2){
 					$points = 5;
@@ -39,7 +39,7 @@ if(!empty($_POST['inputFlag']) && !empty($_POST['username'])){
 					$points = 1;
 				}
 				
-				$award_points = "UPDATE `users` SET `points` = points + 5 WHERE `Username` = '".mysqli_real_escape_string($conn,$_POST['username'])."'";
+				$award_points = "UPDATE `users` SET `points` = points + ".$points." WHERE `Username` = '".mysqli_real_escape_string($conn,$_POST['username'])."'";
 				$void = $conn->query($award_points);
 				?>
 				<div class="alert alert-dismissible alert-success">

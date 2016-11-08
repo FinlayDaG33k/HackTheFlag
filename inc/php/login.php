@@ -19,6 +19,7 @@
 					if ($sql_output->num_rows > 0) { 
 						$user = $sql_output->fetch_assoc();
 						if(password_verify($_POST['inputPassword'],$user['Password']) == true){
+							ini_set('session.gc_maxlifetime', 3600);
 							session_start();
 							session_regenerate_id();
 							$SessionID = session_id();
