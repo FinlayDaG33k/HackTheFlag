@@ -13,6 +13,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
+        <li><a href="/index.php?action=rules">Regels</a></li>
         <li><a href="https://github.com/FinlayDaG33k/HackTheFlag" target="_new">Github</a></li>
         <li><a href="https://forum.finlaydag33k.nl/forumdisplay.php?fid=87" target="_new">Support</a></li>
       </ul>

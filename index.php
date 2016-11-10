@@ -32,7 +32,7 @@ if (!empty($_GET['action'])) {
 ?>
 
 <head>
-	<title>Home - HackTheFlag!</title>
+	<title><?= htmlentities($action); ?> - HackTheFlag!</title>
 	<link rel="stylesheet" href="//<?= $_SERVER[HTTP_HOST]; ?>/inc/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//<?= $_SERVER[HTTP_HOST]; ?>/inc/css/assets.css">
 	<script src="//<?= $_SERVER[HTTP_HOST]; ?>/inc/js/jquery-3.1.1.min.js"></script>

@@ -35,6 +35,12 @@
 							</div>
 							<div class="form-group">
 								<div class="col-lg-10 col-lg-offset-2">
+									<label class="control-label">Door je in te schrijven ga je akkoord met de <a href="/index.php?action=rules" target="_new">regels en voorwaarden</a> van HackTheFlag</label>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-lg-10 col-lg-offset-2">
 									<input type="hidden" name="method" value="register">
 									<button type="reset" class="btn btn-default">Cancel</button>
 									<button type="submit" class="btn btn-primary">Submit</button>
