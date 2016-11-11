@@ -47,6 +47,7 @@
 						<li>De game kan op elk moment uit de lucht gehaald worden mocht er een te grote exploit in voorkomen, of mochten mensen teveel valsspelen.</li>
 						<li>Om misbruik (proberen) te verkomen, word je IP gelogged. Hier word echter niks mee gedaan tenzij er vermoeden is van valsspel.</li>
 						<li>Mocht er enig vermoeden zijn van datalekken (email, hashes etc.) dan worden alle spelers hiervan op de hoogte gesteld.</li>
+						<li>Gebruikersnamen mogen door de Gamemasters worden aangepast mochtten hier offensieve, geweldadige of andere ongepaste woorden/tekens in voorkomen. (Speler word hiervan op de hoogte gesteld!)</li>
 					</ul>
 				</div>
 			</div>

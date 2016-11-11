@@ -43,6 +43,8 @@
 				<li><a href="#">Punten: <?= $points; ?></a></li>
 				<li><a href="#">Opgeloste Challenges: (TODO)</a></li>
 				<li class="divider"></li>
+				<li><a href="//<?= $_SERVER[HTTP_HOST]; ?>/?action=changepassword">Wachtwoord Veranderen</a></li>
+				<li class="divider"></li>
 				<li><a href="//<?= $_SERVER[HTTP_HOST]; ?>/inc/php/login.php?action=logout">Uitloggen</a></li>
 			<?php }else{ ?>
 				<li><a href="/index.php?action=inloggen">Inloggen</a></li>
