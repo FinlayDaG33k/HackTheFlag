@@ -2,7 +2,7 @@
     background: #f7a645 url(/inc/img/bitlogo.png) no-repeat 5px;
     width: 360px;
     height: 25px;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     bottom: 0px;
     right: 0px;

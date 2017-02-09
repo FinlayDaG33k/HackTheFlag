@@ -37,7 +37,7 @@
 									<input type="hidden" name="method" value="login">
 									<button type="reset" class="btn btn-default"><?= LANG_LOGIN_CANCEL; ?></button>
 									<button type="submit" class="btn btn-primary"><?= LANG_LOGIN_SUBMIT; ?></button><br /><br />
-									<a href="#"><?= LANG_LOGIN_FORGOTPASSWORD; ?> (TODO)</a>
+									<a href="?action=forgotpassword"><?= LANG_LOGIN_FORGOTPASSWORD; ?></a>
 								</div>
 							</div>
 						</fieldset>

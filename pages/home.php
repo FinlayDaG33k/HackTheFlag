@@ -41,16 +41,27 @@
 					<h3 class="panel-title">Challenges</h3>
 				</div>
 				<div class="panel-body">
+					<?php 
+					$sql = "SELECT Challenge, Solved FROM logs WHERE Username='".mysqli_real_escape_string($conn,$_SESSION['Username'])."' AND Solved='1';";
+					$sql_output = $conn->query($sql);
+					if ($sql_output->num_rows > 0) {
+						$solvedarray = array();
+						while($row = $sql_output->fetch_assoc()){
+							$solvedarray[] = $row['Challenge'];
+						}
+					}
+					?>
 					<ul>
-						<li><a href="challenges/challenge-1/index.php">Challenge-1</a></li>
-						<li><a href="challenges/challenge-2/index.php">Challenge-2</a></li>
-						<li><a href="challenges/challenge-3/index.php">Challenge-3</a></li>
-						<li><a href="challenges/challenge-4/index.php">Challenge-4</a></li>
-						<li><a href="challenges/challenge-5/index.php">Challenge-5</a></li>
-						<li><a href="challenges/challenge-6/index.php">Challenge-6</a></li>
-						<li><a href="challenges/challenge-7/index.php">Challenge-7</a></li>
-						<li><a href="challenges/challenge-8/index.php">Challenge-8</a></li>
-						<li><a href="challenges/challenge-9/index.php">Challenge-9</a></li>
+						<li><?php if(in_array('1',$solvedarray)){ ?><i class="fa fa-check" aria-hidden="true"></i> <?php } ?><a href="challenges/challenge-1/index.php">Challenge-1</a></li>
+						<li><?php if(in_array('2',$solvedarray)){ ?><i class="fa fa-check" aria-hidden="true"></i> <?php } ?><a href="challenges/challenge-2/index.php">Challenge-2</a></li>
+						<li><?php if(in_array('3',$solvedarray)){ ?><i class="fa fa-check" aria-hidden="true"></i> <?php } ?><a href="challenges/challenge-3/index.php">Challenge-3</a></li>
+						<li><?php if(in_array('4',$solvedarray)){ ?><i class="fa fa-check" aria-hidden="true"></i> <?php } ?><a href="challenges/challenge-4/index.php">Challenge-4</a></li>
+						<li><?php if(in_array('5',$solvedarray)){ ?><i class="fa fa-check" aria-hidden="true"></i> <?php } ?><a href="challenges/challenge-5/index.php">Challenge-5</a></li>
+						<li><?php if(in_array('6',$solvedarray)){ ?><i class="fa fa-check" aria-hidden="true"></i> <?php } ?><a href="challenges/challenge-6/index.php">Challenge-6</a></li>
+						<li><?php if(in_array('7',$solvedarray)){ ?><i class="fa fa-check" aria-hidden="true"></i> <?php } ?><a href="challenges/challenge-7/index.php">Challenge-7</a></li>
+						<li><?php if(in_array('8',$solvedarray)){ ?><i class="fa fa-check" aria-hidden="true"></i> <?php } ?><a href="challenges/challenge-8/index.php">Challenge-8</a></li>
+						<li><?php if(in_array('9',$solvedarray)){ ?><i class="fa fa-check" aria-hidden="true"></i> <?php } ?><a href="challenges/challenge-9/index.php">Challenge-9</a></li>
+						<li><?php if(in_array('10',$solvedarray)){ ?><i class="fa fa-check" aria-hidden="true"></i> <?php } ?><a href="challenges/challenge-10/index.php">Challenge-10</a></li>
 					</ul>
 				</div>
 			</div>
